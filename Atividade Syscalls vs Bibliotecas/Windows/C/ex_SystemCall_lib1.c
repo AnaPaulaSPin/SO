@@ -4,8 +4,8 @@
 int main() {
     char buffer[256];
 
-    printf("Digite uma string: ");              // <-- Impressão com printf (alto nível)
-    fgets(buffer, sizeof(buffer), stdin);       // <-- Leitura com fgets (alto nível)
+    printf("Digite uma string: ");              
+    fgets(buffer, sizeof(buffer), stdin);       
 
     // Remove o '\n' do final, se presente
     size_t len = strlen(buffer);
@@ -14,11 +14,11 @@ int main() {
         len--;
     }
 
-    printf("String invertida: ");               // <-- Impressão com printf
+    printf("String invertida: ");               /
     for (int i = len - 1; i >= 0; i--) {
-        putchar(buffer[i]);                     // <-- Escrita caractere por caractere (alto nível)
+        putchar(buffer[i]);                     
     }
 
-    putchar('\n');                              // <-- Nova linha
+    putchar('\n');                            
     return 0;
 }
